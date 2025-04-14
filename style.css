@@ -1,0 +1,91 @@
+:root {
+    --primario: #4caf50; /* verde suave */
+    --fondo: #f9f9f9;
+    --texto: #333;
+    --gris: #777;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: var(--primario);
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: var(--primario);
+  }
+  
+  section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primario);
+  }
+  
+  .proyecto {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .proyecto h3 {
+    margin-bottom: 10px;
+    color: var(--texto);
+  }
+  
+  .proyecto a {
+    color: var(--primario);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--gris);
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+  }
