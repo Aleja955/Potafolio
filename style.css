@@ -1,9 +1,9 @@
 :root {
-    --primario: #e98bdc; 
-    --fondo: #f9f9f9;
-    --texto: #333;
-    --gris: #777;
-  }
+  --primario: #e98bdc; 
+  --fondo: #121212;
+  --texto: #f0f0f0;
+  --gris: #aaa;
+}
   
   * {
     margin: 0;
@@ -12,7 +12,7 @@
   }
   
   body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
     background-color: var(--fondo);
     color: var(--texto);
     line-height: 1.6;
@@ -22,14 +22,24 @@
   header {
     text-align: center;
     padding: 40px 0;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #1e1e1e;
   }
   
   header h1 {
     font-size: 2.5rem;
     color: var(--primario);
     margin-bottom: 10px;
+  }
+
+  a {
+    color: var(--texto);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color:pink;
   }
   
   .perfil {
@@ -45,7 +55,8 @@
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid pink;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   }
 
   nav ul {
@@ -54,23 +65,32 @@
     justify-content: center;
     gap: 30px;
     margin-left: 85px;
+    gap: 40px;
+    font-weight: 600;
   }
   
-  nav a {
-    text-decoration: none;
-    color: var(--texto);
-    font-weight: bold;
-    transition: color 0.3s;
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #1e1e1e;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   }
-  
   nav a:hover {
-    color: var(--primario);
-  }
+    color: #1e1e1e;
+    background-color: var(--primario);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
   
   section {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
   
   h2 {
@@ -78,45 +98,114 @@
     margin-bottom: 10px;
     color: var(--primario);
   }
-  
-  .proyecto {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  }
 
-  .proyecto img {
+  .proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .proyecto-card {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
+  
+  .proyecto-card img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
   
-  .proyecto h3 {
+  .proyecto-card h3 {
+    color: var(--primario);
     margin-bottom: 10px;
+  }
+  
+  .proyecto-card p {
+    font-size: 0.95rem;
     color: var(--texto);
+    margin-bottom: 15px;
   }
   
-  .proyecto a {
-    color: var(--primario);
-    text-decoration: none;
+  .proyecto-card a {
+    background-color: var(--primario);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
     font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
   }
   
-  .contacto a {
-    color: var(--primario);
-    text-decoration: none;
-    font-weight: bold;
+  .proyecto-card a:hover {
+    background-color: #f69edb;
   }
-  footer {
+
+  #habilidades {
     text-align: center;
-    padding: 20px 0;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  #habilidades h2 {
+    font-size: 2rem;
+    color: var(--primario);
+    margin-bottom: 20px;
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .logos img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    filter: invert(56%) sepia(63%) saturate(388%) hue-rotate(280deg) brightness(102%) contrast(101%);
+  }
+  
+  .logos img:hover {
+    transform: scale(1.1);
+  }
+
+  #contacto a {
+    color: var(--primario);
+    font-weight: bold;
+  }
+
+  #contacto a:hover{
+    color: pink;
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: white;
+    margin-top: 60px;
+    padding: 30px 20px;
+    font-size: 0.85rem;
     color: var(--gris);
-    font-size: 0.9rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #eee;
   }
 
