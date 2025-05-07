@@ -1,98 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+
+
 <body>
+
   <header>
     <div class="perfil">
-      <img src="./img/IMG_20250210_151844-01 (1).jpeg" alt="Foto de perfil de Aleja" class="foto-perfil">
-      <h1>Hello World, soy Aleja</h1>
+      <img src="./img/IMG_20250210_151844-01 (1).jpeg" alt="Foto de Aleja" class="foto-perfil" />
+      <h1>Hello world, soy Aleja 🌱</h1>
     </div>
     <nav>
-      <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+      <div class="nav-container">
+        <div class="logo"></div>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-      <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>
-          Soy Aleja, una desarrolladora Fullstack Java con experiencia en JavaScript, HTML, CSS y bases de datos. Me especializo en crear aplicaciones web modernas, funcionales y con un diseño atractivo. Mi formación en Artes Visuales me permite aportar una perspectiva estética única a mis proyectos, enfocándome tanto en la tecnología como en la experiencia del usuario.
-        </p>
-        <p>
-          Me apasiona el aprendizaje constante y la innovación, siempre buscando nuevos desafíos para seguir creciendo como profesional. Estoy emocionada por la oportunidad de aportar mis habilidades en desarrollo y diseño a proyectos que hagan la diferencia.
-        </p>
-      </section>
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Hola, soy Alejandra Paiva, una desarrolladora Fullstack Java con experiencia en JavaScript, HTML, CSS y bases de datos. Mi formación en Artes Visuales me permite aportar una perspectiva única en el diseño de interfaces, combinando estética y funcionalidad de manera armoniosa.</p>
+      <p>Me apasiona el aprendizaje continuo y la innovación. Siempre estoy en busca de nuevos desafíos que me permitan aplicar mi creatividad y habilidades técnicas para construir soluciones significativas. Cada proyecto es una oportunidad para crecer y aportar valor.</p>
+    </section>
 
+    <section id="proyectos">
+      <h2>Mira mis proyectos</h2>
+      <div class="proyectos-grid">
+        <!-- Proyecto 1 -->
+        <div class="proyecto-card">
+          <img src="./img/eco.png" alt="Eco-store" />
+          <h3>Eco-store</h3>
+          <p>Un sitio web responsivo para una tienda de productos ecológicos. Desarrollado con HTML, CSS y Sass, enfocado en promover la sostenibilidad.</p>
+          <div class="botones">
+            <a href="https://github.com/Aleja955/Eco-Store" target="_blank">Repositorio</a>
+            <a href="https://aleja955.github.io/Eco-Store/" target="_blank">Demo</a>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="proyecto-card">
+          <img src="./img/Batata.png" alt="Batatabit" />
+          <h3>Batatabit</h3>
+          <p>Réplica de un sitio real, práctica de maquetación responsiva usando HTML y CSS, optimizado para dispositivos móviles.</p>
+          <div class="botones">
+            <a href="https://github.com/Aleja955/Batatabit" target="_blank">Repositorio</a>
+            <a href="https://aleja955.github.io/Batatabit/" target="_blank">Demo</a>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="proyecto-card">
+          <img src="./img/Google.png" alt="Google Clone" />
+          <h3>Google Clone</h3>
+          <p>Recreación de la página de inicio de Google, enfocada en una estructura responsiva usando solo HTML y CSS.</p>
+          <div class="botones">
+            <a href="https://github.com/Aleja955/Google-clone" target="_blank">Repositorio</a>
+            <a href="https://aleja955.github.io/Google-clone/" target="_blank">Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="proyectos">
-  <h2>Proyectos</h2>
-  <div class="proyectos-grid">
-    
-    <div class="proyecto-card">
-      <img src="./img/eco.png" alt="Eco-store">
-      <h3>Eco-store</h3>
-      <p>
-        Este es un sitio web informativo para una tienda de productos artesanales y ecológicos. El proyecto está diseñado para ser completamente responsive, accesible y visualmente agradable, utilizando tecnologías como HTML, CSS y Saas. La tienda está orientada a promover productos sostenibles y ofrecer una experiencia de compra amigable con el medio ambiente.
-      </p>
-      <a href="https://github.com/Aleja955/Eco-Store.git">Ver repositorio</a>
-    </div>
+    <section id="habilidades">
+      <h2>Explora mis habilidades</h2>
+      <div class="logos">
+        <img src="./img/java-brands.svg" alt="Java" title="Java" />
+        <img src="./img/html5-brands.svg" alt="HTML5" title="HTML5" />
+        <img src="./img/css3-alt-brands.svg" alt="CSS3" title="CSS3" />
+        <img src="./img/js-brands.svg" alt="JavaScript" title="JavaScript" />
+        <img src="./img/git-brands.svg" alt="Git" title="Git" />
+        <img src="./img/github-brands.svg" alt="GitHub" title="GitHub" />
+      </div>
+    </section>
 
-    <div class="proyecto-card">
-      <img src="./img/Batata.png" alt="Batatabit">
-      <h3>Batatabit</h3>
-      <p>
-        Este proyecto fue creado como parte de mi práctica en HTML y CSS. Es una réplica de un sitio web real con el objetivo de practicar la maquetación web, asegurando que sea completamente responsive y tenga una estructura clara y visualmente atractiva. A través de este proyecto, perfeccioné mis habilidades en diseño web y optimización para dispositivos móviles.
-      </p>
-      <a href="https://github.com/Aleja955/Batatabit.git">Ver repositorio</a>
-    </div>
+    <section id="contacto">
+      <h2>Contáctame para colaborar</h2>
+      <p>¿Estás interesado en trabajar conmigo o colaborar en un proyecto? ¡Me encantaría conocerte y explorar juntos nuevas ideas!</p>
+      <p>Puedes escribirme a <a href="mailto:alejapaiva97@gmail.com">alejapaiva97@gmail.com</a> o en <a href="https://www.linkedin.com/in/alejandra-paiva-2280ba321/" target="_blank">LinkedIn</a> para más información o si tienes alguna propuesta.</p>
+      <p>También puedes descargar mi hoja de vida</p>
+    </section>
+  </main>
 
-    <div class="proyecto-card">
-      <img src="./img/Google.png" alt="Google Clone">
-      <h3>Google Clone</h3>
-      <p>
-        Recreé la página de inicio de Google como una práctica de maquetación web. El proyecto se centró en la estructura responsive y los detalles de la interfaz, con un diseño lo más cercano posible al original, utilizando solo HTML y CSS. Fue una excelente forma de entender cómo funcionan los elementos de la interfaz y cómo optimizar su disposición en diferentes tamaños de pantalla.
-      </p>
-      <a href="https://github.com/Aleja955/Google-clone.git">Ver repositorio</a>
-    </div>
+  <footer>
+    <p>© 2025 Aleja Paiva. Todos los derechos reservados.</p>
+  </footer>
 
-  </div>
-</section>
-
-<section id="habilidades">
-  <h2>Lenguajes y Herramientas</h2>
-  <div class="logos">
-    <img src="./img/java-brands.svg" alt="Java" title="Java">
-    <img src="./img/html5-brands.svg" alt="HTML5" title="HTML5">
-    <img src="./img/css3-alt-brands.svg" alt="CSS3" title="CSS3">
-    <img src="./img/js-brands.svg" alt="JavaScript" title="JavaScript">
-    <img src="./img/git-brands.svg" alt="Git" title="Git">
-    <img src="./img/github-brands.svg" alt="GitHub" title="GitHub">
-  </div>
-</section>
-
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>
-    Si estás interesado en trabajar conmigo, colaborar en un proyecto o simplemente quieres conectarte, ¡no dudes en hacerlo! Estoy siempre abierta a nuevas oportunidades y me encantaría saber más sobre ti o tu proyecto.
-  </p>
-  <p>
-    Puedes contactarme a través de <a href="https://www.linkedin.com/in/alejandra-paiva-2280ba321/">LinkedIn</a> o enviándome un correo electrónico a <a href="mailto:alejapaiva97@gmail.com">alejapaiva97@gmail.com</a>.
-  </p>
-</section>
-
-      <footer>
-        <p>copy right 2025 Aleja. Todos los derechos reservados.</p>
-      </footer>
-    
+  <script src="./script.js"></script>
 </body>
 </html>
