@@ -18,7 +18,7 @@
 ## 🚀 Ver en línea
 
 Puedes ver el portafolio publicado en GitHub Pages aquí:  
-👉 [https://aleja955.github.io/portafolio](https://aleja955.github.io/Potafolio/) 
+👉 [https://aleja955.github.io/portafolio](https://aleja955.github.io/Portafolio//) 
 
 ## 📬 Contacto
 
